@@ -87,24 +87,32 @@
     border: 1px solid black;
     overflow: hidden;
     margin-bottom: 24px;
+    position: relative;
 }
-.stories img{
-    width: 56px;
+.stories ion-icon {
+    position: absolute;
+    right: 9px;
+    bottom: 46px;
+    font-size: 32px;
+    color: #FFFFFF;
+}
+.story img{
+    background-image: url(imagens/stories_background\ 1.png);
 }
 .story{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width:56px;
+    width: 56px;
     height: 118px;
-    border: 1px green;
     margin-left: 24px;
 }
 .story h1{
     font-size: 12px;
     margin-top: 7px;
 }
+
 .posts{
     width: 100%;
     display: flex;
@@ -213,7 +221,19 @@
 .segue-voce{
     font-size: 12px;
 }
+.sobre{
+    margin-top:33px;
+    width: 100%;
+    height: 42px;
 
+}
+.sobre p{
+    font-size: 11px;
+}
+.direitos{
+    margin-top: 18px;
+    font-size: 11px;
+}
 @media (max-width: 935px){
     .ladodireito{
         display: none;
