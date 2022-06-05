@@ -4,6 +4,9 @@
     display: flex;
     align-items: center;
     border-bottom: 1px solid black;
+    position: fixed;
+    background-color: #FFFFFF;
+    z-index: 1;
 }
 .top-bar-conteudo{
     width: 935px;
@@ -58,7 +61,7 @@
 .corpo-conteudo{
     width: 935px;
     height: 100%;
-    margin-top: 34px;
+    margin-top: 88px;
     display: flex;
     justify-content: center;
 }
@@ -238,9 +241,29 @@
     .ladodireito{
         display: none;
     }
+    .corpo-conteudo{
+        width: 100%;
+    }
+    .top-bar-conteudo{
+    width: 100%;
+    justify-content: space-evenly;
+    }
 }
 @media(max-width: 614px){
-    body{
-        background-color: gray;
+    .top-bar{
+        display: none;
+    }
+    .stories ion-icon{
+        display: none;
+    }
+    .stories{
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    .ladoesquerdo{
+        width: 100%;
+    }
+    .corpo-conteudo{
+        margin-top: 54px;
     }
 }
