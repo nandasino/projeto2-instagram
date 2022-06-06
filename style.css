@@ -223,7 +223,9 @@ body{
     width: 20px;
     margin-right: 5px;
 }
-
+span{
+    font-weight: bold !important;
+}
 /*lado direito*/
 .meuperfil{
     width: 100%;
