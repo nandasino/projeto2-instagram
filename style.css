@@ -1,3 +1,6 @@
+body{
+    font-family: 'Roboto', sans-serif !important;
+}
 .top-bar-mobile{
     width: 100%;
     height: 54px;
@@ -17,7 +20,7 @@
     height: 54px;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #DBDBDB;
     position: fixed;
     background-color: #FFFFFF;
     z-index: 1;
@@ -41,7 +44,7 @@
 .linha{
     width: 1px;
     height: 22px;
-    background-color: black;
+    background-color: #DBDBDB;
     margin-left: 10px;
 }
 .pesquisa{
@@ -70,7 +73,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: red;  
+    background-color: #FAFAFA;  
 }
 .corpo-conteudo{
     width: 935px;
@@ -84,14 +87,14 @@
     display: flex;
     flex-direction: column;
     width: 614px;
-    background-color: pink;
+    background-color: #FAFAFA;;
 }
 .ladodireito{
     display: flex;
     flex-direction: column;
     margin-left: 30px;
     width: 293px;
-    background-color: aqua;
+    background-color: #FAFAFA;;
 }
 
 /* lado esquerdo*/
@@ -101,7 +104,8 @@
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    border: 1px solid black;
+    border: 1px solid #DBDBDB;
+    background-color: #FFFFFF;
     overflow: hidden;
     margin-bottom: 24px;
     position: relative;
@@ -113,7 +117,12 @@
     font-size: 32px;
     color: #FFFFFF;
 }
-.story img{
+.background{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    border-radius:56px;
+    padding: 5px;
     background-image: url(imagens/stories_background\ 1.png);
 }
 .story{
@@ -121,20 +130,28 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 56px;
+    width: 66px;
     height: 118px;
-    margin-left: 24px;
+    margin-left: 14px;
 }
 .story h1{
     font-size: 12px;
     margin-top: 7px;
+    color:#262626;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
 }
 
 .posts{
     width: 100%;
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
     background-color: #FFFFFF;
+    border-top: 1px solid #DBDBDB;
+    border-left: 1px solid #DBDBDB;
+    border-right: 1px solid #DBDBDB;
 }
 .top-post{
     width: 100%;
@@ -184,6 +201,9 @@
     padding-right: 17px ;
     margin-bottom: 60px;
     background-color: #FFFFFF;
+    border-bottom: 1px solid #DBDBDB;
+    border-left: 1px solid #DBDBDB;
+    border-right: 1px solid #DBDBDB;
 }
 .curtidas img{
     width: 20px;
@@ -261,6 +281,9 @@
     background-color: #FFFFFF;
     z-index: 1;
     bottom: 0;
+}
+.bottom-bar ion-icon {
+    font-size: 22px;
 }
 @media(min-width: 615px){
     .top-bar-mobile{
